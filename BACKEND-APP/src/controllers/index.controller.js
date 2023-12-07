@@ -5,12 +5,12 @@ const pool = new Pool ({
     host: 'localhost',
     user: 'postgres',
     password: '12345',
-    database: 'firstapi',
+    database: 'snap_pos',
     port: '5432'
 });
  
 const getUsers = async(req, res) => {
-    const response = await pool.query('SELECT * FROM users');
+    const response = await pool.query('SELECT * FROM snap_pos.acceso');
     res.status(200).json(response.rows)
 };
 

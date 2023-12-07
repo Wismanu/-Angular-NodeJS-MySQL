@@ -8,6 +8,8 @@ router.get('/users/:id', getUserById);
 router.put('/users/:id',updateUser);
 router.delete('/users/:id',deleteUser);
 router.post('/users', createUser);                 //no importa que tengan el mismo nombre ya que trabajan con metodos HTTP distintos
+
+
   
 
 module.exports = router;   
